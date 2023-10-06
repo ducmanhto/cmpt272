@@ -1,0 +1,153 @@
+:root {
+    --orange: #f96b3b;
+  }
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+  }
+
+/*Main menu header*/
+header {
+    display: flex;
+    align-items: center;
+    background-color: #30444e;
+    color: white;
+    width: auto;
+    height: 100px;
+}
+
+span {
+    color: var(--orange);
+}
+
+h1 {
+    flex: 80%;
+    margin: 25px;
+    font-size: 2.6em;
+  }
+
+.main-menu-btn {
+    margin: 20px;
+}
+
+/*Main menu content*/
+.page-description {
+    display: flex;
+    flex-direction: row;
+}
+
+.textbooks, 
+.main-menu {
+    flex: 50%;
+} 
+
+h2 {
+    font-size: 1.8em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+a {
+    color: red;
+}
+
+p {
+    padding-left: 25px;
+}
+
+.hide {
+    display: none;
+}
+  
+.faculty:hover ~ .hide {
+    display: block;
+}
+
+@media only screen and (max-width: 550px) {
+    .page-description {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .homepage-title {
+        font-size: 1.8em;
+    }
+}
+
+/*Inventory pages*/
+.inventory {
+    display: flex;
+    gap: 10px;
+    padding: 25px 0;
+}
+
+.book {
+    flex: 20%;
+    background-color: white;
+    cursor: pointer;
+}
+
+.book:hover {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.421);
+}
+
+.b1, .b2, .b3, .b4 {
+    max-width: 100%;
+    height: auto;
+}
+
+.see-more-btn {
+    border: none;
+    background-color:rgb(255, 113, 66);
+    color: white;
+    text-align: center;
+    margin: 20px;
+    width: 110px;
+    font-size: 1.1em;
+    height: 40px;
+    border-radius: 5px;
+    display: block;
+    opacity: 0;
+    transition: opacity 1.5s;
+}
+
+.see-more-btn:hover {
+    opacity: 1;
+}
+
+.footer p {
+    padding-left: 0;
+    margin-top: 40px;
+}
+.footer a {
+    text-decoration-color: white;
+    color: #a50707d5;
+}
+
+@media only screen and (max-width: 770px) {
+    .inventory {
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .book {
+      flex: 45%;
+    }
+    .title {
+      font-size: 1.8em;
+      margin: 20px;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .inventory {
+      flex-direction: column;
+    }
+    .title {
+      font-size: 1.05em;
+      margin: 30px;
+    }
+  }
