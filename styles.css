@@ -142,7 +142,7 @@ p {
     }
   }
   
-  @media only screen and (max-width: 480px) {
+@media only screen and (max-width: 480px) {
     .inventory {
       flex-direction: column;
     }
