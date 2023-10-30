@@ -1,0 +1,79 @@
+
+body {
+    font-family: "Arial";
+    background-color: #A6192E;
+}
+
+main {
+    background-color: white;
+    margin: 20px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.421);
+}
+
+fieldset { border: 0; }
+
+.title {
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+h2 {
+    color: #CC0633;
+    font-family: "Calibri";
+    margin: 15px;
+}
+
+input[type="file"] {
+    padding: 20px;
+}
+
+.bound-container,
+.histogram-container,
+.stats-container {
+  background-color: #e9eff1;
+  border-radius: 5px;
+}
+
+.container {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.bound-container {
+    flex: 45%;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+table {
+    border-spacing: 50px 2em;
+  }
+
+input[type="number"] {
+    margin-left: 40px;
+    height: auto;
+    width: 85px;
+}
+
+.output-container {
+    flex: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.histogram-container,
+.stats-container {
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.square {
+    width: 10px; /* Adjust the width as needed */
+    height: 10px; /* Adjust the height as needed */
+    background-color: #3498db; /* Example color, change as needed */
+    display: inline-block; /* Display squares in a row */
+    margin-right: 2px; /* Adjust the spacing between squares */
+  }
