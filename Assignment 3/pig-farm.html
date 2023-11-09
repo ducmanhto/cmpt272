@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pig Farm</title>
+    <link rel="stylesheet" href="farm-styles.css"/>
+</head>
+<body>
+    <h1>Pig Manager</h1>
+    <section class="data-container">
+        <table id="data-table">
+          <tr>
+            <th>Name</th>
+            <th>Category</th>
+            <th></th>
+            <th></th>
+          </tr>
+        </table>
+    </section>
+
+    <button id="add-pig">Add a new pig</button>
+    
+    <section class="create-container hide">
+    
+    <table id="create-table">
+        <form>
+        <tr>
+            <td><label for="name"> Name </label></td>
+            <td><input type="text" id="name" /></td>
+        </tr>
+        <tr>
+            <td><label for="height"> Height </label></td>
+            <td><input type="number" id="height" /></td>
+        </tr>
+        <tr>
+            <td><label for="weight"> Weight </label></td>
+            <td><input type="number" id="weight" /></td>
+        </tr>
+        <tr>
+            <td><label for="personality"> Personality </label></td>
+            <td><input type="text" id="personality" /></td>
+        </tr>
+        <tr>
+            <td><label for="category">Category </label></td>
+            <td>
+            <select name="category" id="category">
+                <option value="" selected disabled hidden>
+                Choose category
+                </option>
+                <option value="grey">Grey</option>
+                <option value="chestnut">Chestnut</option>
+                <option value="white">White</option>
+                <option value="black">Black</option>
+            </select>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="ability-input" id="ability">Ability</label></td>
+            <td><input type="number" name="ability" id="ability-input" /></td>
+        </tr>
+        <tr>
+            <td><label for="breed">Breed</label></td>
+            <td><input type="text" id="breed" /></td>
+        </tr>
+        </form>
+    </table>
+    <button id="create">Add</button>
+    </section>
+
+    <section class="more-info-container">
+        <h4>More Info:</h4>
+        <table class="info-table">
+            <tr>
+            <th>Name</th>
+            <td id="name-info"></td>
+            </tr>
+            <tr>
+            <th>Breed</th>
+            <td id="breed-info"></td>
+            </tr>
+            <tr>
+            <th>Height</th>
+            <td id="height-info"></td>
+            </tr>
+            <tr>
+            <th>Weight</th>
+            <td id="weight-info"></td>
+            </tr>
+            <tr>
+            <th id="ability-info">Ability</th>
+            <td id="ability-value"></td>
+            </tr>
+            <tr>
+            <th>Personality</th>
+            <td id="personality-info"></td>
+            </tr>
+        </table>
+    </section>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.47/system.js"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      System.defaultJSExtensions = true;
+      System.import("main");
+    </script>
+</body>
+</html>
